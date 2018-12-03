@@ -15,7 +15,7 @@ namespace TQL.Controllers
 
         private AppDbContext db = new AppDbContext();
 
-        // localhost:xxxxx/api/Results/5
+        // localhost:xxxxx/api/Results/10
         [HttpGet]
         public JsonRC GetResults(int? nbr)
         {

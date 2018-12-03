@@ -9,7 +9,7 @@
         $().ready(function () {
             $("#calc").click(function () {
                 var nbr = $("#nbr").val();
-                $.getJSON("http://localhost:53291/api/Results/" + nbr)
+                $.getJSON("http://localhost:53291/api/Results/GetResults?nbr=" + nbr)
                     .then(function (data) {
                         console.log(data);
                     });
